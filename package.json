@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-ark120202",
+  "version": "1.0.0",
+  "description": "ESLint config used in my projects",
+  "main": ".eslintrc.js",
+  "author": "ark120202",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^4.7.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-unicorn": "^2.1.2"
+  }
+}
