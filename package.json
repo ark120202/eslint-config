@@ -11,5 +11,6 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-unicorn": "^2.1.2"
-  }
+  },
+  "repository": "https://github.com/ark120202/eslint-config-ark120202.git"
 }
