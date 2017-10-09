@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ark120202",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint config used in my projects",
   "main": ".eslintrc.js",
   "author": "ark120202",
