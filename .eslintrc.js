@@ -14,6 +14,7 @@ module.exports = {
     'default-case': 0,
     'no-param-reassign': 0,
     'global-require': 0,
+    'class-methods-use-this': 0,
 
     // eslint-plugin-promise
     'promise/prefer-await-to-then': 2,
