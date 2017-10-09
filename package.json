@@ -13,7 +13,5 @@
     "eslint-plugin-unicorn": "^2.1.2"
   },
   "repository": "https://github.com/ark120202/eslint-config-ark120202.git",
-  "dependencies": {
-    "gulp-cli": "^1.4.0"
-  }
+  "dependencies": {}
 }
