@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     'promise',
     'unicorn',
+    'markdown',
   ],
   rules: {
     'no-debugger': 1,
