@@ -25,7 +25,7 @@ module.exports = {
     // eslint-plugin-unicorn
     'unicorn/filename-case': 0,
     'unicorn/explicit-length-check': [2, {
-      'non-zero': 'not-equal',
+      'non-zero': 'greater-than',
     }],
   },
 };
