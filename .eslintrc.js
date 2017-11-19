@@ -3,11 +3,13 @@ module.exports = {
     'airbnb-base',
     'plugin:promise/recommended',
     'plugin:unicorn/recommended',
+    'prettier',
   ],
   plugins: [
     'promise',
     'unicorn',
     'markdown',
+    'prettier',
   ],
   rules: {
     'no-debugger': 1,
