@@ -27,5 +27,8 @@ module.exports = {
     'unicorn/explicit-length-check': [2, {
       'non-zero': 'greater-than',
     }],
+
+    // eslint-plugin-prettier
+    'prettier/prettier': 2,
   },
 };
