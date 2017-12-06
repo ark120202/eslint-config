@@ -5,12 +5,7 @@ module.exports = {
     'plugin:unicorn/recommended',
     'prettier',
   ],
-  plugins: [
-    'promise',
-    'unicorn',
-    'markdown',
-    'prettier',
-  ],
+  plugins: ['promise', 'unicorn', 'markdown', 'prettier'],
   rules: {
     'no-debugger': 1,
     'no-console': 0,
@@ -25,9 +20,12 @@ module.exports = {
 
     // eslint-plugin-unicorn
     'unicorn/filename-case': 0,
-    'unicorn/explicit-length-check': [2, {
-      'non-zero': 'greater-than',
-    }],
+    'unicorn/explicit-length-check': [
+      2,
+      {
+        'non-zero': 'greater-than',
+      },
+    ],
 
     // eslint-plugin-prettier
     'prettier/prettier': 2,
