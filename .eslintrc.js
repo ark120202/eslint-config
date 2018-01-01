@@ -15,6 +15,9 @@ module.exports = {
     'class-methods-use-this': 0,
     'no-underscore-dangle': 0,
 
+    // eslint-plugin-import
+    'import/prefer-default-export': 0,
+
     // eslint-plugin-promise
     'promise/prefer-await-to-then': 2,
 
