@@ -3,9 +3,9 @@ module.exports = {
     'airbnb-base',
     'plugin:promise/recommended',
     'plugin:unicorn/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
-  plugins: ['promise', 'unicorn', 'markdown', 'prettier'],
+  plugins: ['promise', 'unicorn', 'markdown'],
   rules: {
     'no-debugger': 1,
     'no-console': 0,
@@ -29,8 +29,5 @@ module.exports = {
         'non-zero': 'greater-than',
       },
     ],
-
-    // eslint-plugin-prettier
-    'prettier/prettier': 2,
   },
 };
