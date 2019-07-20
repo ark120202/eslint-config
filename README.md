@@ -1,3 +1,3 @@
-# eslint-config-ark120202
+# @ark120202/eslint-config
 
-> ESLint config used in my projects
+> ESLint config for ark120202
