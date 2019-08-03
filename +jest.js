@@ -12,6 +12,7 @@ module.exports = {
     'jest/no-test-callback': 'error',
     'jest/no-test-return-statement': 'error',
     'jest/no-truthy-falsy': 'error',
+    'jest/no-try-expect': 'error',
     'jest/prefer-spy-on': 'error',
     'jest/prefer-todo': 'error',
   },
