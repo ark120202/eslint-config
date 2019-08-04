@@ -12,7 +12,8 @@ module.exports = {
     warnOnUnsupportedTypeScriptVersion: false,
   },
   rules: {
-    'import/no-commonjs': 'error',
+    // `allowRequire` is covered by @typescript-eslint/no-require-imports
+    'import/no-commonjs': ['error', { allowRequire: true }],
     // Covered by @typescript-eslint/no-require-imports
     'global-require': 'off',
     // Covered by @typescript-eslint/no-misused-promises, TODO: it's not enabled in base config
