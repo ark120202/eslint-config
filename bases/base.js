@@ -9,6 +9,7 @@ module.exports = {
     'prettier',
     'prettier/unicorn',
   ],
+  plugins: ['prefer-arrow', 'prefer-class-properties', '@regru/prefer-early-return'],
   rules: {
     // Airbnb
 
@@ -98,7 +99,20 @@ module.exports = {
     'no-tabs': 'error',
     quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
 
+    'prefer-arrow-callback': 'error',
+    'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
+    'prefer-arrow/prefer-arrow-functions': [
+      'error',
+      { disallowPrototype: true, singleReturnOnly: true, classPropertiesAllowed: false },
+    ],
+
     // Extra plugins
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/314
+    'prefer-class-properties/prefer-class-properties': 'error',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/16
+    '@regru/prefer-early-return/prefer-early-return': ['error', { maximumStatements: 3 }],
 
     'promise/prefer-await-to-then': 'error',
 

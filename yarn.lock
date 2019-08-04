@@ -23,6 +23,11 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@regru/eslint-plugin-prefer-early-return@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@regru/eslint-plugin-prefer-early-return/-/eslint-plugin-prefer-early-return-1.0.0.tgz#267c0f1409f7f45c9473bd14407ed6081e5dec4a"
+  integrity sha512-rOIjKi/npfNcunmrakkKQAolX/qakY8DUkp/P0PeSmQ0xnTNT6CCTHcMHxhFEvLRlrIBY3gJkUwh5rt9Z+GTyg==
+
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
@@ -425,6 +430,18 @@ eslint-plugin-node@^9.1.0:
     minimatch "^3.0.4"
     resolve "^1.10.1"
     semver "^6.1.0"
+
+eslint-plugin-prefer-arrow@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-arrow/-/eslint-plugin-prefer-arrow-1.1.5.tgz#ad2b91b126eb208547da7af9e9719b3598a5a063"
+  integrity sha512-vjwd/I3R0jjMbzjMxaekzHz5/ohTLparvxtW5f/7tAXvM8h4/z/C4HR6l7qv5e0JnYRSTfyzad0OiJxlnI1bBw==
+
+eslint-plugin-prefer-class-properties@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-class-properties/-/eslint-plugin-prefer-class-properties-1.0.0.tgz#0ac117bb641385461d7e019339b77ea2f02bec2e"
+  integrity sha1-CsEXu2QThUYdfgGTObd+ovAr7C4=
+  dependencies:
+    requireindex "~1.1.0"
 
 eslint-plugin-promise@^4.2.1:
   version "4.2.1"
@@ -1209,6 +1226,11 @@ regexpp@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
   integrity sha512-lv0M6+TkDVniA3aD1Eg0DVpfU/booSu7Eev3TDO/mZKHBfVjgCGTV4t4buppESEYDtkArYFOxTJWv6S5C+iaNw==
+
+requireindex@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
+  integrity sha1-5UBLgVV+91225JxacgBIk/4D4WI=
 
 reserved-words@^0.1.2:
   version "0.1.2"
