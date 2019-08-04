@@ -61,6 +61,12 @@ module.exports = {
     'no-console': 'off',
     'import/no-dynamic-require': 'off',
 
+    // https://github.com/prettier/eslint-config-prettier#special-rules
+    'arrow-body-style': 'error',
+    curly: ['error', 'multi-line', 'consistent'],
+    'no-tabs': 'error',
+    quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
+
     // Extra plugins
 
     'promise/prefer-await-to-then': 'error',
