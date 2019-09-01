@@ -70,6 +70,15 @@ module.exports = {
       },
       'SequenceExpression',
     ],
+    // TODO: https://github.com/airbnb/javascript/issues/2076
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: { exceptions: ['-', '+'], markers: ['=', '!', '/'] },
+        block: { exceptions: ['-', '+'], markers: ['=', '!', ':', '::'], balanced: true },
+      },
+    ],
 
     // Enabling rules
     'no-implicit-coercion': ['error', {}],
