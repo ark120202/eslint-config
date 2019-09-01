@@ -18,6 +18,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     'consistent-return': 'off',
     'default-case': 'off',
+    'max-classes-per-file': 'off',
     'no-await-in-loop': 'off',
     'no-bitwise': 'off',
     'no-empty-function': 'off',
@@ -83,11 +84,7 @@ module.exports = {
     ],
 
     // Commented with `TODO: enable, semver-major` in base config
-    'no-self-assign': ['error', { props: true }],
-    'no-useless-catch': 'error',
-    'no-misleading-character-class': 'error',
     'require-atomic-updates': 'error',
-    'prefer-object-spread': 'error',
 
     // https://github.com/prettier/eslint-config-prettier#special-rules
     'arrow-body-style': 'error',

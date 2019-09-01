@@ -25,7 +25,7 @@ module.exports = {
     'import/no-commonjs': ['error', { allowRequire: true }],
     // Covered by @typescript-eslint/no-require-imports
     'global-require': 'off',
-    // Covered by @typescript-eslint/no-misused-promises, TODO: it's not enabled in base config
+    // Covered by @typescript-eslint/no-misused-promises
     'no-async-promise-executor': 'off',
 
     // TODO: Should be covered by a type-based rule
@@ -49,7 +49,7 @@ module.exports = {
     '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/consistent-type-assertions': [
       'error',
-      { objectLiteralTypeAssertions: 'never' },
+      { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' },
     ],
     // TODO: '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/consistent-type-definitions': 'error',
