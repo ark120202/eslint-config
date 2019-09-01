@@ -7,6 +7,7 @@ module.exports = {
     'jest/no-commented-out-tests': 'error',
     'jest/no-duplicate-hooks': 'error',
     'jest/no-empty-title': 'error',
+    'jest/no-expect-resolves': 'error',
     'jest/no-export': 'error',
     'jest/no-mocks-import': 'error',
     'jest/no-test-callback': 'error',

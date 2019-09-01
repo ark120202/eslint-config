@@ -47,6 +47,10 @@ module.exports = {
     camelcase: 'off',
     '@typescript-eslint/camelcase': ['error', { properties: 'never', ignoreDestructuring: true }],
     '@typescript-eslint/class-name-casing': 'error',
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      { objectLiteralTypeAssertions: 'never' },
+    ],
     // TODO: '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/explicit-member-accessibility': [
@@ -57,28 +61,18 @@ module.exports = {
     '@typescript-eslint/interface-name-prefix': 'error',
     // TODO: Enable?
     // '@typescript-eslint/member-naming': 'error',
-    '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
-    '@typescript-eslint/no-inferrable-types': [
-      'error',
-      // TODO: 2.0.0 - remove
-      { ignoreParameters: false, ignoreProperties: false },
-    ],
+    '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-misused-promises': 'error',
     '@typescript-eslint/no-namespace': 'error',
-    '@typescript-eslint/no-object-literal-type-assertion': 'error',
     '@typescript-eslint/no-require-imports': 'error',
-    '@typescript-eslint/no-this-alias': [
-      'error',
-      // TODO: 2.0.0 - remove
-      { allowDestructuring: true },
-    ],
+    '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     'no-useless-constructor': 'off',
@@ -90,14 +84,12 @@ module.exports = {
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/prefer-readonly': 'error',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
-    '@typescript-eslint/promise-function-async': [
-      'error',
-      { allowAny: true, checkArrowFunctions: false },
-    ],
+    '@typescript-eslint/promise-function-async': ['error', { checkArrowFunctions: false }],
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/unified-signatures': 'error',
+    '@typescript-eslint/use-default-type-parameter': 'error',
   },
 };
