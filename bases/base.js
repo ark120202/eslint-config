@@ -21,6 +21,7 @@ module.exports = {
     'max-classes-per-file': 'off',
     'no-await-in-loop': 'off',
     'no-bitwise': 'off',
+    'no-continue': 'off',
     'no-empty-function': 'off',
     'no-multi-assign': 'off',
     'no-nested-ternary': 'off',
