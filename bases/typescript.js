@@ -75,6 +75,7 @@ module.exports = {
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
     // TODO: Enable instead of unicorn/no-for-loop after https://github.com/typescript-eslint/typescript-eslint/issues/702
@@ -90,6 +91,5 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/unified-signatures': 'error',
-    '@typescript-eslint/use-default-type-parameter': 'error',
   },
 };
