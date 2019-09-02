@@ -1,7 +1,8 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: 'plugin:eslint-plugin/all',
+  plugins: ['eslint-plugin'],
   rules: {
-    'report-message-format': ['error', '^[A-Z].*\\.$'],
+    'eslint-plugin/report-message-format': ['error', '^[A-Z].*\\.$'],
   },
 };
