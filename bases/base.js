@@ -18,6 +18,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     'consistent-return': 'off',
     'default-case': 'off',
+    'guard-for-in': 'off',
     'max-classes-per-file': 'off',
     'no-await-in-loop': 'off',
     'no-bitwise': 'off',
