@@ -122,8 +122,16 @@ module.exports = {
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-unused-disable': 'error',
 
+    'unicorn/consistent-function-scoping': 'off',
+    'unicorn/no-nested-ternary': 'off',
     'unicorn/no-process-exit': 'off',
+    'unicorn/prefer-reflect-apply': 'off',
     // TODO: unicorn/custom-error-definition - not supports class properties
+    'unicorn/expiring-todo-comments': [
+      'error',
+      // TODO: https://github.com/sindresorhus/eslint-plugin-unicorn/pull/400
+      { allowWarningComments: true },
+    ],
     'unicorn/filename-case': [
       'error',
       { cases: { kebabCase: true, camelCase: true, pascalCase: true } },
@@ -136,6 +144,8 @@ module.exports = {
         checkProperties: false,
 
         extendDefaultReplacements: false,
+        // Generated from https://github.com/sindresorhus/eslint-plugin-unicorn/blob/c3326d218ee11bd32e0cf167774641749fe70d6b/rules/prevent-abbreviations.js
+        // with following excludes: ["e", "env", "dev", "prod", "arg", "args", "db", "prop", "lib", "dir", "dirs", "ref", "refs", "pkg", "doc", "docs", "src", "props", "attr", "attrs"]
         replacements: {
           err: { error: true },
           cb: { callback: true },
@@ -146,7 +156,15 @@ module.exports = {
           val: { value: true },
           evt: { event: true },
           el: { element: true },
+          req: { request: true },
+          res: { response: true, result: true },
           btn: { button: true },
+          msg: { message: true },
+          len: { length: true },
+          tmp: { temporary: true },
+          param: { parameter: true },
+          params: { parameters: true },
+          tbl: { table: true },
           ctx: { context: true },
           mod: { module: true },
           arr: { array: true },
@@ -154,11 +172,16 @@ module.exports = {
           retval: { returnValue: true },
           ext: { extension: true },
           exts: { extensions: true },
-          dir: { directory: true },
-          dirs: { directories: true },
           sep: { separator: true },
+          elem: { element: true },
+          dest: { destination: true },
+          prev: { previous: true },
+          curr: { current: true },
+          cur: { current: true },
+          acc: { accumulator: true },
           rel: { relative: true, related: true, relationship: true },
           conf: { config: true },
+          temp: { temporary: true },
         },
       },
     ],

@@ -73,6 +73,8 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
+    // TODO: Consider switching to a stricter `strict-boolean-expression` rule
+    '@typescript-eslint/no-unnecessary-condition': ['error', { ignoreRhs: true }],
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
@@ -86,6 +88,12 @@ module.exports = {
     '@typescript-eslint/prefer-readonly': 'error',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/promise-function-async': ['error', { checkArrowFunctions: false }],
+    quotes: 'off',
+    '@typescript-eslint/quotes': [
+      'error',
+      'single',
+      { avoidEscape: true, allowTemplateLiterals: false },
+    ],
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
