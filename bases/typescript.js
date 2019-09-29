@@ -73,7 +73,7 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
-    // TODO: Consider switching to a stricter `strict-boolean-expression` rule
+    'no-constant-condition': 'off',
     '@typescript-eslint/no-unnecessary-condition': ['error', { ignoreRhs: true }],
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
