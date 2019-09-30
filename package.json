@@ -1,6 +1,6 @@
 {
   "name": "@ark120202/eslint-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "ESLint config for ark120202",
   "repository": "https://github.com/ark120202/eslint-config",
   "license": "MIT",
