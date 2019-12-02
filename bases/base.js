@@ -128,11 +128,7 @@ module.exports = {
     'unicorn/no-process-exit': 'off',
     'unicorn/prefer-reflect-apply': 'off',
     // TODO: unicorn/custom-error-definition - not supports class properties
-    'unicorn/expiring-todo-comments': [
-      'error',
-      // TODO: https://github.com/sindresorhus/eslint-plugin-unicorn/pull/400
-      { allowWarningComments: true },
-    ],
+    'unicorn/expiring-todo-comments': 'error',
     'unicorn/filename-case': [
       'error',
       { cases: { kebabCase: true, camelCase: true, pascalCase: true } },
@@ -142,8 +138,6 @@ module.exports = {
       'error',
       {
         checkFilenames: true,
-        checkProperties: false,
-
         extendDefaultReplacements: false,
         // Generated from https://github.com/sindresorhus/eslint-plugin-unicorn/blob/c3326d218ee11bd32e0cf167774641749fe70d6b/rules/prevent-abbreviations.js
         // with following excludes: ["e", "env", "dev", "prod", "arg", "args", "db", "prop", "lib", "dir", "dirs", "ref", "refs", "pkg", "doc", "docs", "src", "props", "attr", "attrs"]
