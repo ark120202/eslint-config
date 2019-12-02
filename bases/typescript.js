@@ -57,7 +57,7 @@ module.exports = {
       'error',
       { overrides: { constructors: 'no-public' } },
     ],
-    '@typescript-eslint/generic-type-naming': ['error', '^T([A-Z][A-Za-z]*)?$'],
+    '@typescript-eslint/generic-type-naming': ['error', '^(T([A-Z][A-Za-z]*)?|U|P|K|V)$'],
     '@typescript-eslint/interface-name-prefix': 'error',
     // TODO: Enable?
     // '@typescript-eslint/member-naming': 'error',
