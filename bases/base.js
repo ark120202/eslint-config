@@ -1,3 +1,6 @@
+// @ts-ignore
+const { rules: baseImportsRules } = require('eslint-config-airbnb-base/rules/imports');
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
@@ -10,6 +13,10 @@ module.exports = {
     'prettier/unicorn',
   ],
   plugins: ['prefer-arrow', 'prefer-class-properties', '@regru/prefer-early-return'],
+  settings: {
+    'import/resolver': { node: { extensions: ['.js', '.ts', '.jsx', '.tsx', '.json'] } },
+    'import/extensions': ['.js', '.ts', '.mjs', '.jsx', '.tsx'],
+  },
   rules: {
     // Airbnb
 
@@ -50,6 +57,11 @@ module.exports = {
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     // TODO: Enable in web?
     'import/no-extraneous-dependencies': ['error', {}],
+    'import/extensions': [
+      baseImportsRules['import/extensions'][0],
+      baseImportsRules['import/extensions'][1],
+      { ...baseImportsRules['import/extensions'][2], ts: 'never', tsx: 'never' },
+    ],
     // Allow only `// fallthrough` comment
     'no-fallthrough': ['error', { commentPattern: /^ fallthrough$/.source }],
     'object-shorthand': [

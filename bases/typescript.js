@@ -74,6 +74,8 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
+    'no-throw-literal': 'off',
+    '@typescript-eslint/no-throw-literal': 'error',
     'no-constant-condition': 'off',
     '@typescript-eslint/no-unnecessary-condition': [
       'error',
