@@ -1,4 +1,5 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ['base', 'typescript', 'web'].map(name => require.resolve(`./bases/${name}`)),
+  extends: [require.resolve('./bases/base'), require.resolve('./bases/web')],
+  overrides: [{ files: '**/*.ts', extends: require.resolve('./bases/typescript') }],
 };

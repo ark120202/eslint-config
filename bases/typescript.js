@@ -38,29 +38,55 @@ module.exports = {
       'error',
       {
         types: {
+          object: false,
+          '{}': false,
           Function: null,
           CallableFunction: { fixWith: '(...args: any[]) => any' },
           NewableFunction: { fixWith: 'new (...args: any[]) => any' },
         },
       },
     ],
-    camelcase: 'off',
-    '@typescript-eslint/camelcase': ['error', { properties: 'never', ignoreDestructuring: true }],
-    '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/consistent-type-assertions': [
       'error',
       { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' },
     ],
-    // TODO: '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
       { overrides: { constructors: 'no-public' } },
     ],
-    '@typescript-eslint/generic-type-naming': ['error', '^(T([A-Z][A-Za-z]*)?|U|P|K|V)$'],
-    '@typescript-eslint/interface-name-prefix': 'error',
-    // TODO: Enable?
-    // '@typescript-eslint/member-naming': 'error',
+    camelcase: 'off',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      { selector: 'default', format: ['camelCase'] },
+
+      // TODO: Allow PascalCase for constructable types
+      // TODO: Allow any name for destructured values
+      { selector: 'variableLike', format: null },
+      // { selector: 'variableLike', format: ['camelCase'] },
+      // { selector: 'variable', format: ['camelCase', 'UPPER_CASE'] },
+      // { selector: 'parameter', format: ['camelCase'], leadingUnderscore: 'allow' },
+
+      // TODO: https://github.com/typescript-eslint/typescript-eslint/issues/1712
+      // TODO: https://github.com/typescript-eslint/typescript-eslint/issues/2244
+      { selector: 'memberLike', format: null },
+      // TODO: Keep only one format
+      { selector: 'enumMember', format: ['PascalCase', 'UPPER_CASE'] },
+      // TODO: Require `private _property`?
+      // { selector: 'memberLike', modifiers: ['private'], format: ['camelCase'], leadingUnderscore: 'require' },
+
+      { selector: 'typeLike', format: ['PascalCase'] },
+      {
+        selector: 'typeParameter',
+        format: ['PascalCase'],
+        custom: { regex: '^(T([A-Z][A-Za-z]*)?|U|P|K|V)$', match: true },
+      },
+      {
+        selector: 'interface',
+        format: ['PascalCase'],
+        custom: { regex: '^I[A-Z]', match: false },
+      },
+    ],
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
@@ -77,10 +103,7 @@ module.exports = {
     'no-throw-literal': 'off',
     '@typescript-eslint/no-throw-literal': 'error',
     'no-constant-condition': 'off',
-    '@typescript-eslint/no-unnecessary-condition': [
-      'error',
-      { ignoreRhs: true, allowConstantLoopConditions: true },
-    ],
+    '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
