@@ -204,4 +204,17 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: [
+        '**/webpack.config.{js,ts}',
+        '**/webpack.config.*.{js,ts}',
+        '**/rollup.config.{js,ts}',
+        '**/rollup.config.*.{js,ts}',
+      ],
+      rules: {
+        'import/no-anonymous-default-export': 'off',
+      },
+    },
+  ],
 };
