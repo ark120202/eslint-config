@@ -142,6 +142,8 @@ module.exports = {
     'unicorn/no-process-exit': 'off',
     // TODO: Enable?
     'unicorn/no-reduce': 'off',
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/801
+    'unicorn/no-useless-undefined': 'off',
     'unicorn/prefer-reflect-apply': 'off',
     'unicorn/custom-error-definition': 'error',
     'unicorn/expiring-todo-comments': 'error',
