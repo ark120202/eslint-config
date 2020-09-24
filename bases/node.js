@@ -5,7 +5,8 @@ module.exports = {
     node: { convertPath: { 'src/**/*.{j,t}s?(x)': ['^src/(.+?)\\.[jt]sx?$', 'lib/$1.js'] } },
   },
   rules: {
-    'node/no-unpublished-bin': 'error',
+    // https://github.com/mysticatea/eslint-plugin-node/issues/199
+    // 'node/no-unpublished-bin': 'error',
     // node/no-unpublished-import doesn't allow importing types declared only in dev?
     'node/no-unsupported-features/node-builtins': 'error',
     // https://github.com/mysticatea/eslint-plugin-node/issues/96
