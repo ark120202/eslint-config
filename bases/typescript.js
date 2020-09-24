@@ -138,4 +138,13 @@ module.exports = {
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/unified-signatures': 'error',
   },
+  overrides: [
+    {
+      files: '**/*.d.ts',
+      rules: {
+        // This plugin doesn't handle `declare class A { constructor() }`
+        'prefer-class-properties/prefer-class-properties': 'off',
+      },
+    },
+  ],
 };
