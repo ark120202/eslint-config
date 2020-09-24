@@ -79,7 +79,7 @@ module.exports = {
       {
         selector: 'typeParameter',
         format: ['PascalCase'],
-        custom: { regex: '^(T([A-Z][A-Za-z]*)?|U|P|K|V)$', match: true },
+        custom: { regex: '^(T(\\d+|[A-Z][A-Za-z0-9]*)?|U|P|K|V)$', match: true },
       },
       {
         selector: 'interface',
