@@ -145,6 +145,7 @@ module.exports = {
     // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/801
     'unicorn/no-useless-undefined': 'off',
     'unicorn/prefer-reflect-apply': 'off',
+    'unicorn/prefer-set-has': 'off',
     'unicorn/custom-error-definition': 'error',
     'unicorn/expiring-todo-comments': 'error',
     'unicorn/better-regex': ['error', { sortCharacterClasses: false }],
