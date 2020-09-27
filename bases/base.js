@@ -148,6 +148,7 @@ module.exports = {
     'unicorn/prefer-set-has': 'off',
     'unicorn/custom-error-definition': 'error',
     'unicorn/expiring-todo-comments': 'error',
+    'unicorn/prefer-flat-map': 'error',
     'unicorn/better-regex': ['error', { sortCharacterClasses: false }],
     'unicorn/filename-case': [
       'error',
