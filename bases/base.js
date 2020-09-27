@@ -41,10 +41,12 @@ module.exports = {
     'import/no-cycle': 'off',
     // Covered by no-restricted-syntax
     'no-sequences': 'off',
+    'import/no-webpack-loader-syntax': 'off',
     // https://github.com/benmosher/eslint-plugin-import/issues/1311
     // https://github.com/typescript-eslint/typescript-eslint/issues/113
     // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/324
     'import/order': 'off',
+
     // Re-enabled in web
     'no-console': 'off',
     'import/no-dynamic-require': 'off',

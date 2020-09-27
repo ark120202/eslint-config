@@ -5,7 +5,5 @@ module.exports = {
     'import/no-dynamic-require': 'error',
     'import/no-nodejs-modules': 'error',
     'import/dynamic-import-chunkname': 'error',
-
-    // TODO: Disable import/no-webpack-loader-syntax?
   },
 };
