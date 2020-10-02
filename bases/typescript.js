@@ -29,6 +29,8 @@ module.exports = {
     '@typescript-eslint/no-array-constructor': 'error',
     'no-loop-func': 'off',
     '@typescript-eslint/no-loop-func': 'error',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
     'no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-expressions': 'error',
     'no-useless-constructor': 'off',
