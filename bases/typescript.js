@@ -31,6 +31,8 @@ module.exports = {
     // TODO: Should be covered by a type-based rule
     // 'import/no-deprecated': 'off',
 
+    'no-loop-func': 'off',
+    '@typescript-eslint/no-loop-func': 'error',
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/await-thenable': 'error',
