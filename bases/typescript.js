@@ -134,6 +134,7 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }],
     // TODO: Allow any
     // '@typescript-eslint/restrict-template-expressions': 'error',
+    'no-return-await': 'off',
     // TODO: Always?
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
