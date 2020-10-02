@@ -21,18 +21,25 @@ module.exports = {
     'import/namespace': 'off',
     'import/export': 'off',
 
-    // `allowRequire` is covered by @typescript-eslint/no-require-imports
-    'import/no-commonjs': ['error', { allowRequire: true }],
-    // Covered by @typescript-eslint/no-require-imports
-    'global-require': 'off',
-    // Covered by @typescript-eslint/no-misused-promises
-    'no-async-promise-executor': 'off',
-
     // TODO: Should be covered by a type-based rule
     // 'import/no-deprecated': 'off',
 
+    // Extension Rules
+    'no-array-constructor': 'off',
+    '@typescript-eslint/no-array-constructor': 'error',
     'no-loop-func': 'off',
     '@typescript-eslint/no-loop-func': 'error',
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-expressions': 'error',
+    'no-useless-constructor': 'off',
+    '@typescript-eslint/no-useless-constructor': 'error',
+    quotes: 'off',
+    '@typescript-eslint/quotes': [
+      'error',
+      'single',
+      { avoidEscape: true, allowTemplateLiterals: false },
+    ],
+
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/await-thenable': 'error',
@@ -89,8 +96,6 @@ module.exports = {
         custom: { regex: '^I[A-Z]', match: false },
       },
     ],
-    'no-array-constructor': 'off',
-    '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
@@ -98,8 +103,12 @@ module.exports = {
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-misused-new': 'error',
+    'no-async-promise-executor': 'off',
     '@typescript-eslint/no-misused-promises': 'error',
     '@typescript-eslint/no-namespace': 'error',
+    // `allowRequire` is covered by @typescript-eslint/no-require-imports
+    'import/no-commonjs': ['error', { allowRequire: true }],
+    'global-require': 'off',
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
     'no-throw-literal': 'off',
@@ -109,10 +118,6 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
-    'no-unused-expressions': 'off',
-    '@typescript-eslint/no-unused-expressions': 'error',
-    'no-useless-constructor': 'off',
-    '@typescript-eslint/no-useless-constructor': 'error',
     // TODO: Enable instead of unicorn/no-for-loop after https://github.com/typescript-eslint/typescript-eslint/issues/702
     // '@typescript-eslint/prefer-for-of': 'off',
     '@typescript-eslint/prefer-function-type': 'error',
@@ -124,12 +129,6 @@ module.exports = {
     '@typescript-eslint/prefer-readonly': 'error',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/promise-function-async': ['error', { checkArrowFunctions: false }],
-    quotes: 'off',
-    '@typescript-eslint/quotes': [
-      'error',
-      'single',
-      { avoidEscape: true, allowTemplateLiterals: false },
-    ],
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }],
